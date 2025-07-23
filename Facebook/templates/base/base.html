@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+</head>
+<body>
+    {% include 'base/_navbar.html' %}
+    
+    <h1>I am base page code.</h1>
+    {% block content %}
+        <h1>Garima</h1>
+    {% endblock content %}
+
+  {% include 'base/_footer.html' %}
+</body>
+</html>

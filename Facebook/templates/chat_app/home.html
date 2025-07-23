@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+
+
+{% block title %} Homepage {% endblock title %}
+
+{% block content %}
+    <h1>I am home page.</h1>
+    {% for name in names %}
+    {% if name == 'Garima' %}
+        <p>{{ name }}</p>
+    {% endif %}
+    {% endfor %}
+{% endblock content %}
